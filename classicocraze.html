@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CrazeClasico - The Ultimate Memecoin for Barcelona Fans</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+  body {
+    margin: 0; padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #0a174e; /* Dark Blue */
+    color: #fefefe;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  header {
+    background: #a50044; /* Barca Red */
+    padding: 1.5rem 2rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  }
+  header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #ffcc00; /* Barca yellow */
+    text-shadow: 2px 2px #000000aa;
+  }
+  header p {
+    margin: 0.5rem 0 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #ffd54f;
+  }
+  main {
+    flex: 1;
+    max-width: 900px;
+    margin: 2rem auto 3rem;
+    padding: 0 1rem;
+  }
+  section {
+    margin-bottom: 3rem;
+    background: #131e46;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 0 15px rgba(255, 204, 0, 0.3);
+  }
+  section h2 {
+    color: #ffcc00;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    letter-spacing: 0.1em;
+  }
+  section p {
+    font-size: 1.15rem;
+    line-height: 1.6;
+    text-align: center;
+  }
+  #memes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 1.5rem;
+  }
+  .meme-card {
+    background: #202b63;
+    border-radius: 12px;
+    padding: 1.25rem;
+    box-shadow: 0 0 10px #a50044aa;
+    color: #ffd54f;
+    font-weight: 600;
+    text-align: center;
+    font-size: 1.1rem;
+  }
+  .meme-card .emoji {
+    font-size: 2.5rem;
+    margin-bottom: 0.75rem;
+  }
+  #cta {
+    text-align: center;
+  }
+  #cta button {
+    background: #a50044;
+    color: #ffcc00;
+    border: none;
+    padding: 1rem 2.5rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 6px 12px #ffcc00aa;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  #cta button:hover {
+    background: #ffcc00;
+    color: #a50044;
+    box-shadow: 0 6px 14px #a50044aa;
+  }
+  footer {
+    background: #0a174e;
+    color: #777;
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 1rem 2rem;
+    border-top: 1px solid #222f7a;
+  }
+  @media (max-width: 600px) {
+    header h1 {
+      font-size: 1.8rem;
+    }
+    section h2 {
+      font-size: 1.5rem;
+    }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>CrazeClasico</h1>
+  <p>The Ultimate Memecoin for Barcelona Fans</p>
+</header>
+<main>
+  <section id="about">
+    <h2>About CrazeClasico</h2>
+    <p>CrazeClasico is a memecoin created by die-hard Barcelona fans to celebrate the spirit, passion, and glory of the greatest football club in the world. More than a coin, it represents our love for the game and a playful jab at our eternal rivals – Real Madrid. Join us as we enjoy the memes, the moments, and the legacy of Barça through the blockchain.</p>
+  </section>
+
+  <section id="memes-section">
+    <h2>Meme Appreciation</h2>
+    <div id="memes">
+      <div class="meme-card">
+        <div class="emoji">🔵🔴</div>
+        <div>"When you dribble past Real like it’s 2009 all over again!"</div>
+      </div>
+      <div class="meme-card">
+        <div class="emoji">⚽🔥</div>
+        <div>"Messi magic > Cristiano's statues. Change my mind!"</div>
+      </div>
+      <div class="meme-card">
+        <div class="emoji">🐐🏆</div>
+        <div>"Real fans googling ‘La Décima’ for the 10th time..."</div>
+      </div>
+      <div class="meme-card">
+        <div class="emoji">🕶️🤣</div>
+        <div>"Barça scores; Madrid fans… still confused on tactics."</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="jab-section">
+    <h2>Playful Jabs at Real Madrid Fans</h2>
+    <p>While we respect the beautiful game, we have to admit, the Real Madrid fanbase always gives us material for top-tier memes! From their “Galácticos” trying to catch our stars, to obsessing over “biggest trophy count” debates, the CrazeClasico fam loves to remind them who truly rules the pitch.</p>
+    <p>Let’s keep the fun rivalry alive — with memes, passion, and of course, the best memecoin for our beloved Barça!</p>
+  </section>
+
+  <section id="cta">
+    <h2>Join the Craze!</h2>
+    <p>Ready to show your Barça pride and join the CrazeClasico family? Get your memecoins now and be part of the ultimate fan community!</p>
+    <button onclick="joinCraze()">Get CrazeClasico Coin</button>
+  </section>
+</main>
+<footer>
+  &copy; 2024 CrazeClasico • Made with passion by Barcelona fans
+</footer>
+<script>
+  function joinCraze() {
+    alert("Thank you for joining the CrazeClasico family! \n\n(Imagine a wallet address here to copy for your memecoin purchase!) 🔥🔵🔴");
+  }
+</script>
+</body>
+</html>
+
